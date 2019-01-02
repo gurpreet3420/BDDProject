@@ -7,7 +7,7 @@ import cucumber.api.junit.*;
 	@CucumberOptions(
 			features = "Features",
 			glue = {"stepDefinitions"},
-			plugin = {"pretty","html:target/reports"},
+			plugin = {"pretty","html:target/reports","json:target/reports"},
 			monochrome = true,
 			dryRun = false,
 			strict = false			
