@@ -1,5 +1,8 @@
 package stepDefinitions;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -7,10 +10,15 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class StepDefinitionLoginPage {
+	
+	private static Logger log = null;
 
 	@Before(order = 2)
 	public void setup() {
 		System.out.println("Global before 1");
+		 System.setProperty("log4j.configurationFile","./resources/log4j.xml");
+		 log = LogManager.getLogger(StepDefinitionLoginPage.class.getName());
+		
 	}
 
 	@Before(order = 1)
@@ -29,8 +37,18 @@ public class StepDefinitionLoginPage {
 	}
 
 	@Given("^User is at the login page$")
-	public void user_is_at_the_login_page() throws Throwable {
+	public void user_is_at_the_login_page() {
 		System.out.println("Hello1");
+		int i =10;
+		for (int j=1; j>i;j++) {
+			System.out.println("Hello for loop");
+		}
+		//WebDriver driver = new ChromeDriver();
+		
+		log.debug("Debug message");
+		log.error("Error message");
+		log.info("Info message");
+		
 	}
 
 	@When("^User enter the valid username and password$")

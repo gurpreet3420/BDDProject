@@ -1,0 +1,8 @@
+00:52:53.985 [main] INFO  stepDefinitions.StepDefinitionLoginPage - Info message
+00:54:15.051 [main] DEBUG stepDefinitions.StepDefinitionLoginPage - Debug message
+00:54:15.052 [main] ERROR stepDefinitions.StepDefinitionLoginPage - Error message
+00:54:15.052 [main] INFO  stepDefinitions.StepDefinitionLoginPage - Info message
+00:54:15.064 [main] DEBUG stepDefinitions.StepDefinitionLoginPage - Debug message
+00:54:15.064 [main] ERROR stepDefinitions.StepDefinitionLoginPage - Error message
+00:54:15.064 [main] INFO  stepDefinitions.StepDefinitionLoginPage - Info message
+00:54:49.136 [main] DEBUG stepDefinitions.StepDefinitionLoginPage - Debug message
