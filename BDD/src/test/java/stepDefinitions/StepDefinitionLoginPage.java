@@ -1,5 +1,7 @@
 package stepDefinitions;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -13,6 +15,7 @@ public class StepDefinitionLoginPage {
 	
 	private static Logger log = null;
 
+	@BeforeMethod
 	@Before(order = 2)
 	public void setup() {
 		System.out.println("Global before 1");
@@ -21,16 +24,19 @@ public class StepDefinitionLoginPage {
 		
 	}
 
+	@BeforeMethod
 	@Before(order = 1)
 	public void setup1() {
 		System.out.println("Global before 2");
 	}
 
+	@AfterMethod
 	@After()
 	public void tearDown() {
 		System.out.println("Global after 1");
 	}
 
+	@AfterMethod
 	@After("@PositiveScenario")
 	public void tearDown1() {
 		System.out.println("Global after 2");

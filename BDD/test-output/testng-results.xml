@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="1082" started-at="2019-01-14T06:08:34Z" finished-at="2019-01-14T06:08:35Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:stepDefinitions.TestRunner@c038203]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="1082" started-at="2019-01-14T06:08:34Z" finished-at="2019-01-14T06:08:35Z">
+      <class name="stepDefinitions.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:stepDefinitions.TestRunner@c038203]" name="setUpClass" is-config="true" duration-ms="270" started-at="2019-01-13T22:08:34Z" finished-at="2019-01-13T22:08:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:stepDefinitions.TestRunner@c038203]" name="feature" duration-ms="696" started-at="2019-01-13T22:08:34Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-01-13T22:08:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Login page validation]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:stepDefinitions.TestRunner@c038203]" name="tearDownClass" is-config="true" duration-ms="7" started-at="2019-01-13T22:08:35Z" finished-at="2019-01-13T22:08:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- stepDefinitions.TestRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
